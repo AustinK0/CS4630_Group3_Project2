@@ -1,0 +1,2 @@
+method,dataset_version,n_clusters,n_rows,n_features,runtime_seconds,prediction_time_seconds,iterations,accuracy,silhouette_score,davies_bouldin,compactness,separation
+KMeans Full 28,sample_200k,2,200000,28,2.5421218872070312,0.025912761688232422,6,55.6385,,,,
