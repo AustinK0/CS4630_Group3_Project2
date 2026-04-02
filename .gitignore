@@ -1,5 +1,8 @@
 # Ignore dataset
 data/raw/
+data/processed/higgs_sample.csv
+data/processed/X_sample.csv
+data/processed/y_sample.csv
 
 # Ignore Virtual Environment
 .venv/
