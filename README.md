@@ -1,13 +1,40 @@
 # CS4630_Group3_Project2
 
-## Notes
-- Sample dataset with 200k rows is saved in data/processed.
+## Organization
 
-- X_sample.csv and y_sample.csv is saved in data/processed and can be read in to run models with `X = pd.read_csv("data/processed/X_sample.csv")` and `y = pd.read_csv("data/processed/y_sample.csv")`
+### data/raw
+This code expects the full dataset to be placed in data/raw under the filename HIGGS.csv
 
-- Add results to results table to keep all results in one place. Read in with `df_summary = pd.read_csv("results/metrics/clustering_summary.csv")` and update when more metrics are calculated
+### data/processed
 
-## Step 3 Results: K-Means on PCA-Reduced Data
+| File | Description | Dimensions | Type |
+| :--- | :--- | :--- | :--- |
+| **higgs_sample.csv** | Raw subsampled data | 200,001 x 29 | CSV |
+| **X_sample.csv** | Feature matrix (input) | 200,000 x 28 | CSV |
+| **Y_sample.csv** | Ground truth labels | 200,000 x 1 | CSV |
+| **X_pca_2.csv** | PCA Reduced (Low dim) | 200,000 x 2 | CSV |
+| **X_pca_5.csv** | PCA Reduced (Mid dim) | 200,000 x 5 | CSV |
+| **X_pca_10.csv** | PCA Reduced (High dim) | 200,000 x 10 | CSV |
+
+### results/metrics
+Here is only one file: **clustering_summary.csv** which contains training data for each iteration of K-Means for each dataset
+
+### results/visualizations
+This folder contains various visualizations to illustrate different stages of our process of using PCA and K-Means through this unsupervised learning process
+
+## Running
+
+All of the code is done in jupiter notebook files in the following order
+
+1. prepare_data.ipynb
+2. kmeans_full.ipynb
+3. pca_analysis.ipynb
+4. kmeans_pca_10.ipynb
+5. kmeans_pca_5.ipynb
+6. kmeans_pca_2.ipynb
+7. calculate_clustering_metrics.ipynb
+
+## Basic Results (further expanded in report)
 
 The following results were produced by running K-Means (`k=2`) on each PCA-reduced dataset.
 
