@@ -1,7 +1,5 @@
 # Large-Scale Unsupervised Structure Discovery on UCI HIGGS Dataset
 
-GitHub Repo Link: https://github.com/AustinK0/CS4630_Group3_Project2
-
 ## 1. Key Problems Studied
 High energy physics studies fundamental particles and forces through high energy collisions. The UCI HIGGS dataset captures simulated collision events where class `1` is signal and class `0` is background. The core challenge is that these classes overlap strongly in feature space, making separation difficult.
 
